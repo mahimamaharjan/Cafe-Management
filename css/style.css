@@ -1,0 +1,970 @@
+.menuContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menuContainer .main {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    max-width: 70%;
+    margin-top: 50px;
+}
+.menuContainer .main .top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.menuContainer .main .top #navbar {
+    width: 100%;
+    margin-bottom: 5px;
+}
+.menuContainer .main .top .heading {
+    font-size: 70px;
+    margin-bottom: 10px;
+    background: grey;
+    flex-basis: 100%;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menuContainer .main .top .topBottom {
+    display: flex;
+    justify-content: space-around;
+}
+.menuContainer .main .top .topBottom .cafedesc {
+    flex-basis: 40%;
+}
+.menuContainer .main .top .topBottom .timetable {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.menuContainer .main .top .topBottom .timetable .opening {
+    min-height: 41px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    background: lightgray;
+}
+.menuContainer .main .top .topBottom .timetable .timetablerow {
+    display: flex;
+    min-height: 40px;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    border-bottom: 1px solid;
+}
+.menuContainer .main .top .topBottom .timetable .timetablerow.rowhead {
+    font-size: 20px;
+}
+.menuContainer .main .top .topBottom .timetable .timetablerow > div {
+    flex-basis: 30%;
+    flex-grow: 1;
+    border-right: 1px solid;
+}
+.menuContainer .main .middle {
+    display: flex;
+    width: 65%;
+    justify-content: space-around;
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-self: flex-start;
+    align-items: center;
+    background: steelblue;
+    min-height: 50px;
+    align-self: center;
+    color: white;
+}
+.menuContainer .main .middle .menuNav {
+    flex-basis: 100%;
+    flex-grow: 1;
+    text-align: center;
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid;
+    cursor: pointer;
+}
+.menuContainer .main .middle .menuNav:hover {
+    background: lightblue;
+    opacity: 0.5;
+}
+.menuContainer .main .middle .menuNav.active {
+    background: lightblue;
+}
+.menuContainer .main .bottom {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.menuContainer .main .bottom .dishContainer {
+    display: none;
+    flex-direction: column;
+}
+.menuContainer .main .bottom .dishContainer.visible {
+    display: flex;
+}
+.menuContainer .main .bottom .menu h1 {
+    font-size: 25px;
+    text-align: center;
+}
+.menuContainer .main .bottom .row {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background: lightgray;
+    min-height: 110px;
+}
+.menuContainer .main .bottom .row:nth-child(even) {
+    background: #ccc;
+}
+.menuContainer .main .bottom .row:nth-child(odd) {
+    background: #fff;
+}
+.menuContainer .main .bottom .row .title {
+    text-align: center;
+    color: red;
+}
+.menuContainer .main .bottom .row .content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.menuContainer .main .bottom .row .content .image {
+    flex-basis: 10%;
+    flex-grow: 1;
+}
+.menuContainer .main .bottom .row .content .image img {
+    height: 100px;
+    width: 100px;
+}
+.menuContainer .main .bottom .row .content .description {
+    flex-basis: 50%;
+    flex-grow: 1;
+}
+.menuContainer .main .bottom .row .content .qty {
+    display: flex;
+    flex-basis: 10%;
+    flex-grow: 1;
+    flex-direction: column;
+}
+.menuContainer .main .bottom .row .content .qty input {
+    max-width: 40px;
+}
+.menuContainer .main .bottom .row .content .comment {
+    flex-basis: 20%;
+    flex-grow: 1;
+}
+.menuContainer .main .bottom .row .content .comment textarea {
+    height: 80px;
+    width: 95%;
+}
+.menuContainer .main .bottom .row .content .addtobasket {
+    background: grey;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.menuContainer_master {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menuContainer_master .main {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    max-width: 70%;
+}
+.menuContainer_master .main .masterContainer {
+    flex-basis: 100%;
+    flex-grow: 1;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.menuContainer_master .main .masterContainer.nav {
+    flex-direction: column;
+}
+.menuContainer_master .main .masterContainer.nav #navbar {
+    width: 100%;
+}
+.menuContainer_master .main .masterContainer .tableContainer {
+    text-align: center;
+}
+.menuContainer_master .main .masterContainer .tableContainer .row {
+    padding: 10px;
+}
+.menuContainer_master .main .masterContainer .tableContainer .row:nth-child(even) {
+    background: #ccc;
+}
+.menuContainer_master .main .masterContainer .tableContainer .row:nth-child(odd) {
+    background: #fff;
+}
+.menuContainer_master .main .masterContainer .tableContainer .row.header {
+    height: 60px;
+    background: grey;
+    color: white;
+}
+.menuContainer_master .main .masterContainer .tableContainer .row .body {
+    min-height: 80px;
+}
+.menuContainer_master .main .masterContainer .tableContainer .row td {
+    padding: 10px;
+}
+.menuContainer_master .main .masterContainer .tableContainer .row .sn {
+    min-width: 40px;
+}
+.menuContainer_master .main .masterContainer .tableContainer .description {
+    width: 40%;
+}
+.menuContainer_master .main .masterContainer .container_menu_master {
+    flex-basis: 60%;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menuContainer_master .main .masterContainer .container_menu_master #addmenu_form {
+    background-color: lightgray;
+    opacity: 0.8;
+    border-radius: 34px;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    justify-content: center;
+}
+.menuContainer_master .main .masterContainer .container_menu_master #addmenu_form .form-row-add {
+    min-height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+}
+.menuContainer_master .main .masterContainer .container_menu_master #addmenu_form .form-row-add.header {
+    justify-content: center;
+}
+.menuContainer_master .main .masterContainer .container_menu_master #addmenu_form .form-row-add.footer {
+    justify-content: center;
+}
+.menuContainer_master .main .masterContainer .container_menu_master #addmenu_form .form-row-add label {
+    min-width: 40%;
+    min-height: 26px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+.menuContainer_master .main .masterContainer .container_menu_master #addmenu_form .form-row-add input {
+    padding: 5px;
+    min-width: 50%;
+    min-height: 26px;
+}
+.menuContainer_master .main .masterContainer .container_menu_master #addmenu_form .form-row-add.description {
+    min-height: 80px;
+}
+.menuContainer_master .main .masterContainer .container_menu_master #addmenu_form .form-row-add.description label {
+    min-width: 40%;
+    min-height: 80px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+.menuContainer_master .main .masterContainer .container_menu_master #addmenu_form .form-row-add.description textarea {
+    padding: 5px;
+    min-width: 50%;
+    min-height: 80px;
+}
+.menuContainer_master .main .masterContainer .container_menu_master #addmenu_form .form-row-add select {
+    min-width: 108px;
+    font-size: 20px;
+}
+.menuContainer_master .main .masterContainer .container_menu_master #addmenu_form .form-row-add.footer button {
+    height: 50px;
+    width: 142px;
+    font-size: 23px;
+    padding: 5px;
+    border-radius: 5px;
+    background: green;
+    color: white;
+    cursor: pointer;
+}
+#registerform_div {
+    flex-basis: 60%;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#registerform_div #registerform {
+    background-color: lightgray;
+    opacity: 0.8;
+    border-radius: 34px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+}
+#registerform_div #registerform .form-row {
+    min-height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+}
+#registerform_div #registerform .form-row.header {
+    justify-content: center;
+}
+#registerform_div #registerform .form-row.footer {
+    align-self: center;
+}
+#registerform_div #registerform .form-row label {
+    min-width: 40%;
+    min-height: 26px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    color: black;
+    text-transform: none;
+}
+#registerform_div #registerform .form-row input {
+    padding: 5px;
+    min-width: 50%;
+    min-height: 26px;
+}
+#registerform_div #registerform .form-row.loginbtn {
+    align-self: center;
+}
+#registerform_div #registerform .form-row button {
+    height: 50px;
+    width: 142px;
+    font-size: 23px;
+    padding: 5px;
+    border-radius: 5px;
+    background: green;
+    color: white;
+    cursor: pointer;
+    align-self: center;
+}
+.container_registration .register-row {
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container_registration .register-row label {
+    padding-right: 10px;
+    flex: 1;
+    font-size: 20px;
+}
+.container_registration .register-row input {
+    min-height: 40px;
+    padding: 0 !important;
+    height: 40px;
+}
+.container_registration .register-row a {
+    text-decoration: none;
+}
+.container_registration .register-row .left {
+    display: flex;
+    width: 200px;
+    margin-right: 10px;
+}
+
+
+.container_registration .register-row .right {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 40%;
+    margin-right: 10px;
+}
+.container_registration .register-row .right .top {
+    display: flex;
+}
+.container_registration .register-row .registerBtn {
+    cursor: pointer;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 26px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    background: #00a145;
+    color: black;
+    width: 50px;
+    flex-basis: 20%;
+    min-height: 50px !important;
+}
+.container_registration .register-row .registerBtn.disabled {
+    background: #cccccc;
+    pointer-events: none;
+    cursor: default;
+}
+body {
+    background-image: url('../img/background.jpg');
+    color: #444;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
+    margin: 0;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+.navContainer {
+    width: 80%;
+    margin: auto;
+}
+.navContainer .mainmenu {
+    display: flex;
+    justify-content: flex-end;
+}
+.navContainer .mainmenu .hasSubmenu {
+    z-index: 5;
+}
+.submenu {
+    position: absolute;
+}
+.navContainer .mainmenu .hasSubmenu .submenu {
+    display: none;
+}
+.navContainer .mainmenu .hasSubmenu:hover .submenu {
+    display: flex;
+    z-index: 2;
+    background: gray;
+    margin-top: -16px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.navContainer .mainmenu .hasSubmenu:hover .submenu .child {
+    background: lightgray;
+    width: 100%;
+    text-align: left;
+}
+.navContainer .mainmenu .hasSubmenu:hover .submenu .child:hover {
+    background-color: #3e8e41;
+    cursor: pointer;
+}
+#main-header {
+    background-color: coral;
+    color: #fff;
+}
+#main-header h1 {
+    text-shadow: 0px 15px 5px rgba(0, 0, 0, 0.1), 10px 20px 5px rgba(0, 0, 0, 0.05), -10px 20px 5px rgba(0, 0, 0, 0.05);
+}
+#main-header a {
+    color: #fff;
+    text-decoration: none;
+}
+#navbar {
+    background-color: #333;
+    color: #fff;
+    text-align: right;
+}
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
+#navbar li {
+    display: inline;
+}
+#navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding-right: 15px;
+}
+#navbar li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+#showcase {
+    /*background-image: url('../img/background.jpg');*/
+    background-position: center right;
+    min-height: 200px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+#showcase #img_div {
+    min-height: 150px;
+}
+#showcase h1 {
+    color: #ff7f50;
+    font-size: 50px;
+    line-height: 1.6em;
+    padding-top: 30px;
+    text-transform: uppercase;
+    border-bottom: 3px solid;
+}
+#registerform {
+    background-color: lightgray;
+    opacity: 0.8;
+    border-radius: 34px;
+    padding: 37px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+#main {
+    width: 70%;
+    padding: 100px 30px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: auto;
+}
+#main-footer {
+    color: #000;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+.container_registration {
+    width: 60%;
+    margin: auto;
+    overflow: hidden;
+}
+.container_registration .form-row {
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+.container_registration .form-row label {
+    padding-right: 10px;
+    flex: 1;
+    font-size: 20px;
+}
+.container_registration .form-row input {
+    min-height: 40px;
+    padding: 0 !important;
+    height: 40px;
+}
+.container_registration .form-row a {
+    text-decoration: none;
+}
+.container_registration .form-row .left {
+    display: flex;
+    flex-basis: 30%;
+    flex-grow: 1;
+}
+.container_registration .form-row .right {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 70%;
+    flex-grow: 1;
+}
+.container_registration .form-row .right .top {
+    display: flex;
+}
+.container_registration .form-row .registerBtn {
+    cursor: pointer;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 26px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    background: #00a145;
+    color: black;
+    width: 50px;
+    flex-basis: 20%;
+    min-height: 50px !important;
+}
+.container_registration .form-row .registerBtn.disabled {
+    background: #cccccc;
+    cursor: default;
+}
+input.input-validation-error,
+form textarea.errorField,
+form textarea.input-validation-error {
+    background-color: #fff;
+    border: 2px solid #e70000;
+    color: #000;
+    padding-right: 28px;
+    box-sizing: border-box;
+}
+input[type='text'],
+input[type='email'],
+input[type='password'],
+input[type='tel'],
+input[type='number'] {
+
+    border-radius: 4px;
+    background-color: #fff;
+    color: #353535;
+    font-size: 12px;
+    line-height: 18px;
+}
+input:focus {
+    border: 1px solid #00a145;
+}
+form input.input-validation-error,
+form textarea.input-validation-error {
+    background-color: #fff;
+    border: 2px solid #e70000;
+    color: #000;
+    padding-right: 28px;
+    box-sizing: border-box;
+}
+.errorMessage {
+    display: none;
+    color: red;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.errorMessage.isInvalid {
+    display: flex;
+}
+.errorMessage ul {
+    margin: 0;
+}
+#navbar li a:hover {
+    background-color: #3e8e41;
+}
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+    color: green;
+}
+.valid:before {
+    position: relative;
+    left: -35px;
+    content: '&#10004;';
+}
+/* Add a red text color and an "x" icon when the requirements are wrong */
+.invalid {
+    color: red;
+}
+.invalid:before {
+    position: relative;
+    left: -35px;
+    content: '&#10006;';
+}
+.clear {
+    clear: both;
+}
+span.required {
+    color: red;
+    padding-left: 5px;
+}
+.error-div {
+    text-align: left;
+    background: #cc0202;
+    color: #fff;
+    padding: 10px 15px;
+    margin: 10px 0;
+}
+.success-div {
+    text-align: left;
+    background: #468847;
+    color: #fff;
+    padding: 10px 15px;
+    margin: 10px 0;
+}
+.warning-div {
+    text-align: left;
+    background: #b58009;
+    color: #fff;
+    padding: 10px 15px;
+    margin: 10px 0;
+}
+.orange-button {
+    background: #ff5618;
+    padding: 8px 20px;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+.orange-button:hover {
+    background: #ff7f50;
+}
+a.orange-button {
+    display: inline-block;
+    text-decoration: none;
+}
+button.orange-button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+#main-header .left-div {
+    float: left;
+}
+#main-header .right-div {
+    float: right;
+    padding-top: 20px;
+}
+#main-header .right-div a {
+    text-decoration: underline;
+}
+h1.content-heading {
+    color: #000;
+    border-bottom: 3px solid #000;
+    padding-bottom: 10px;
+}
+.cafe-heading {
+    margin: 10px 0;
+    line-height: normal;
+}
+.cafe-heading .cafe-title {
+    background: #808080;
+    padding: 10px 0;
+    font-size: 60px;
+    text-align: center;
+}
+.cafe-heading .cafe-hours {
+    background: #a9a9a9;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+table th.price-cell, table td.price-cell {
+    text-align: right;
+}
+.list-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.list-table, .list-table th, .list-table td {
+    border: 1px solid #ddd;
+    padding: 8px 10px;
+}
+.list-table th {
+    text-align: left;
+    background: #444;
+    color: #fff;
+}
+.list-table tbody tr:nth-child(odd) {
+    background: #fff;
+}
+.list-table tbody tr:nth-child(even) {
+    background: #eee;
+}
+.pagination {
+    display: table;
+    margin: auto;
+    padding: 20px 0;
+}
+.page-nav, .page-num {
+    float: left;
+    text-align: center;
+    margin: 0 5px;
+    background: #fb6c38;
+}
+.page-nav a, .page-num a {
+    display: block;
+    padding: 5px 15px;
+    color: #fff;
+    text-decoration: none;
+}
+.page-nav:hover, .page-num:hover {
+    background: #9e340c;
+}
+.page-num-active {
+    background: #9e340c;
+}
+.form-div {
+    width: 60%;
+    margin: auto;
+}
+.form-div table {
+    width: 100%;
+}
+.form-div table td {
+    padding: 5px;
+}
+.form-div table td:nth-child(1) {
+    width: 30%;
+}
+.form-div table td:nth-child(2) {
+    width: 70%;
+}
+.form-div input[type=text], .form-div input[type=password], .form-div select{
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #acacac;
+    outline: none;
+}
+.form-div select {
+    width: 100%;
+}
+.form-div select.time-select {
+    width: auto;
+}
+#menu_container {
+    background: #fff;
+}
+.menu-table-div {
+    width: calc(50% - 10px);
+    float: left;
+}
+.menu-table-div:nth-child(odd) {
+    margin-right: 10px;
+}
+.menu-table-div:nth-child(even) {
+    margin-left: 10px;
+}
+.menu-table-div h2 {
+    background: #583c32;
+    color: #fff;
+    margin: 0;
+    padding: 10px;
+}
+.menu-table-div table {
+    width: 100%;
+    padding: 5px;
+}
+.menu-table-div table td:nth-child(3) {
+    width: 1%;
+    white-space: nowrap;
+    padding-left: 5px;
+}
+.menu-table-div .add-item-btn,
+#order_tbl .remove-item-btn,
+.order-extra-table button[type=submit] {
+    background: #b9775f;
+    padding: 5px 10px;
+    color: #FFFFFF;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.menu-table-div .add-item-btn:hover,
+#order_tbl .remove-item-btn:hover,
+.order-extra-table button[type=submit]:hover {
+    background: #c38772;
+}
+#order_tbl {
+    width: 100%;
+    border-collapse: collapse;
+    border-bottom: 2px solid #444;
+    margin: 15px 0;
+}
+#order_tbl th {
+    text-align: left;
+    border-top: 2px solid #444;
+    border-bottom: 2px solid #444;
+}
+#order_tbl th.price-cell {
+    text-align: right;
+}
+#order_tbl, #order_tbl th, #order_tbl td {
+    padding: 5px 8px;
+}
+#order_tbl tbody tr:first-child td {
+    padding-top: 10px;
+}
+#order_tbl tbody tr:last-child td {
+    padding-bottom: 10px;
+}
+#order_tbl input[type=text] {
+    padding: 5px;
+}
+.order-extra-table select {
+    padding: 5px;
+}
+.order-extra-table button[type=submit] {
+    padding: 8px 15px;
+    font-size: 14px;
+}
+@media (max-width: 600px) {
+    #main {
+        width: 100%;
+        float: none;
+    }
+}
+
+.registrationForm{
+    display: flex;
+    flex-direction: column;
+}
+
+.registerformInput{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.container_registration .register-row .error {
+    display: flex;
+    flex-basis: 50%;
+    flex-grow: 1;
+    flex-direction: column;
+    background: gainsboro;
+    position: absolute;
+    left: 70%;
+
+}
+
+.container_registration .register-row .error.password-error {
+    display: flex;
+    flex-basis: 50%;
+    flex-grow: 1;
+    flex-direction: column;
+    background: gainsboro;
+    position: absolute;
+    left: 70%;
+    margin-top: 65px;
+
+}
+
+.container_registration .register-row .message {
+    display: flex;
+    padding: 5px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.container_registration .register-row .message .faIcon {
+
+    padding: 5px;
+
+}
+
+
+.errrorMessage {
+    color:red;
+}
+
+.validMessage{
+    color:green;
+
+}
+
+.valid-error{
+    border: 2px solid red;
+
+}
+
+.valid-success{
+    border:2px solid green;
+}
